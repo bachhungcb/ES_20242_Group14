@@ -21,6 +21,8 @@ public:
 
     // Xóa pattern hiện tại
     void clearReferencePattern();
+    // load pattern from flash memory
+    void loadPattern();
 
 private:
     // Private constructor để ngăn tạo đối tượng từ bên ngoài (Singleton)

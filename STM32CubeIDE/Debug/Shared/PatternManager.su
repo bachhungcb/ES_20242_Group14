@@ -1,5 +1,0 @@
-../Shared/PatternManager.cpp:5:17:static PatternManager& PatternManager::getInstance()	16	static
-../Shared/PatternManager.cpp:11:12:const int* PatternManager::getReferencePattern() const	0	static
-../Shared/PatternManager.cpp:16:9:uint8_t PatternManager::getReferencePatternLength() const	0	static
-../Shared/PatternManager.cpp:21:6:void PatternManager::setReferencePattern(const int*, uint8_t)	16	static
-../Shared/PatternManager.cpp:32:6:void PatternManager::clearReferencePattern()	0	static

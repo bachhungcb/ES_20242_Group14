@@ -14,6 +14,7 @@ public:
     }
 
     void tick();
+    void init();
 protected:
     ModelListener* modelListener;
 };
