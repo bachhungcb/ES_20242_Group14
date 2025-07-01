@@ -41,7 +41,20 @@ void MainScreenView::tearDownScreen()
 
 void MainScreenView::handleTickEvent()
 {
+	currentTick++;
 
+	if (locked && currentTick >= lockedUntilTick) {
+	    locked = false;
+	    remainingAttempts = MAX_ATTEMPTS;
+
+	    Unicode::snprintf(attemptsBuffer, sizeof(attemptsBuffer) / sizeof(Unicode::UnicodeChar),
+	                      "%d attempts remains", remainingAttempts);
+	    attemptsText.setWildcard(attemptsBuffer);
+	    attemptsText.invalidate();
+
+	    lockNotice.setVisible(false); // Ẩn thông báo
+	    lockNotice.invalidate();
+	}
 }
 
 void MainScreenView::addDot(int dotNumber){
