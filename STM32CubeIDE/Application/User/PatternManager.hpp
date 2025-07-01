@@ -21,6 +21,7 @@ public:
 
     // Xóa pattern hiện tại
     void clearReferencePattern();
+    void loadPattern();
 
 private:
     // Private constructor để ngăn tạo đối tượng từ bên ngoài (Singleton)
