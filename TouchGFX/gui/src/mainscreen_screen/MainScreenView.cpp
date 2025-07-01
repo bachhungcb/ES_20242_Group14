@@ -2,13 +2,7 @@
 #include "BitmapDatabase.hpp"
 #include <touchgfx/Color.hpp>
 
-#include "../../../../../ES_20242/STM32CubeIDE/Shared/PatternManager.hpp" 	 //do bọn STM32CubeIDE quá ngu không thể nhận biết được đường dẫn
-																				 //nên phải dùng như này bọn ngu lợn này mới nhận được
-																				 //config đủ kiểu rồi nhưng bọn ngu này chúng nó nhận diện sai đường dẫn, nhầm
-																				 //chúng nó thậm chí còn không phân biệt được workspace và file solution
-																				 //bọn này xứng đáng bị tử hình
-																				 //3 tiếng không làm gì, chỉ ngồi xem thằng CubeIDE tự động chọn đến một cái đường dẫn không có thật
-																				 //và tất nhiên cái đường dẫn đấy không dùng được rồi
+#include "../../../../../ES_20242/STM32CubeIDE/Shared/PatternManager.hpp" 	 
 #include "main.h"
 #include "cmsis_os.h"
 #include "app_touchgfx.h"
